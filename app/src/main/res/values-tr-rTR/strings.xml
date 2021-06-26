@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DoQu</string>
+    <string name="username" >Kullanıcı Adı</string>
+    <string name="password" >Şifre</string>
+    <string name="confirm_password">Şifreyi Onayla</string>
+    <string name="name" >İsim Soyisim</string>
+    <string name="sign_up" >Kayıt Ol</string>
+    <string name="sign_in" >Giriş Yap</string>
+    <string name="title_ask" >Başlık gir</string>
+    <string name="details_ask" >Detaylar...</string>
+    <string name="share_question" >Soruyu Paylaş</string>
+    <string name="home" >Ana Sayfa</string>
+    <string name="profile" >Profil</string>
+    <string name="settings" >Ayarlar</string>
+    <string name="share" >Paylaş</string>
+    <string name="like" >Beğen</string>
+    <string name="comment_ask" >Yorum yap</string>
+    <string name="delete_all_questions" >TÜM SORULARI SİL</string>
+    <string name="delete_account" >HESABI SİL</string>
+    <string name="password_match">Şifreler eşleşmelidir!</string>
+    <string name="password_valid">Şifre geçerli olmalıdır!</string>
+    <string name="username_valid">Kullanıcı Adı geçerli olmalıdır!</string>
+    <string name="name_valid">İsim Soyisim geçerli olmalıdır!</string>
+    <string name="fail_create_account">Hesap açma başarısız! Tekrar deneyin.</string>
+    <string name="wrong_entry">Yanlış kullanıcı adı veya şifre</string>
+    <string name="deleted_questions">Tüms sorular başarıyla silindi.</string>
+    <string name="went_wrong">Bir şeyler yanlış gitti.</string>
+    <string name="question_not_created">Soru oluşturulamadı.</string>
+    <string name="question_created">Soru başarıyla oluşturuldu!</string>
+    <string name="password_rule1">• En az 1 büyük karakter.</string>
+    <string name="password_rule2">• En az 1 rakam.</string>
+    <string name="password_rule3">• En az 1 küçük karakter.</string>
+    <string name="password_rule4">• En az 8 uzunluğunda olmalı.</string>
+</resources>

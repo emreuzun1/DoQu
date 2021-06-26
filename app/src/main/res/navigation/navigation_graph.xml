@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainPageFrag">
+
+    <fragment
+        android:id="@+id/mainPageFrag"
+        android:name="com.example.doqu.Main.MainPageFrag"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFrag_to_postFrag"
+            app:destination="@id/postFrag"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainPageFrag_to_shareQuestionPage"
+            app:destination="@id/shareQuestionFrag" />
+        <action
+            android:id="@+id/action_mainPageFrag_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFrag"
+        android:name="com.example.doqu.Post.PostFrag"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="likeCount"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="user"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/shareQuestionFrag"
+        android:name="com.example.doqu.ShareQuestionPage"
+        android:label="fragment_share_question_page"
+        tools:layout="@layout/fragment_share_question_page" >
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_shareQuestionPage_to_mainPageFrag"
+            app:destination="@id/mainPageFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.doqu.Profile.ProfileActivity"
+        android:label="fragment_profile"
+        tools:layout="@layout/activity_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_mainPageFrag"
+            app:destination="@id/mainPageFrag" />
+    </fragment>
+</navigation>

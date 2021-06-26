@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8090A6"
+    android:gravity="center_horizontal"
+    tools:context=".SignUpScreen">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:src="@mipmap/ic_app_icon_round" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="@string/name"
+                android:maxLength="18"
+                android:padding="10dp"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/nameWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/name_valid"
+                android:textColor="#FF0000"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="@string/username"
+                android:maxLength="18"
+                android:padding="10dp"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/usernameWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/username_valid"
+                android:textColor="#FF0000"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:padding="10dp"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/passwordWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/password_valid"
+                android:textColor="#FF0000"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/password_rule1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/password_rule2"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/password_rule3"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/password_rule4"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:padding="10dp"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/checkPasswordWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/password_match"
+                android:textColor="#FF0000"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/rounded_corners_grey"
+                android:text="@string/sign_up" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

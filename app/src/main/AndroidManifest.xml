@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doqu">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Main.MainActivity"></activity>
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".Main.MainPage" />
+        <activity android:name=".Main.MainPage" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:parentActivityName=".Main.MainPage" />
+        <activity
+            android:name=".SignUpScreen"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:windowSoftInputMode="adjustPan|adjustResize" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
